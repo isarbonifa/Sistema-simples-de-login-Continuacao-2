@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Painel</title></head>
+<body>
+    <h1>Bem-vindo, {{ username }}! 🎮</h1>
+    <p>Você está logado no sistema básico.</p>
+    <br>
+    <a href="{{ url_for('auth.listar_usuarios') }}">Ver Usuários Cadastrados</a>
+    <br><br>
+    <a href="{{ url_for('auth.logout') }}">Sair</a>
+</body>
+</html>
